@@ -6,7 +6,7 @@ public class ControleRemoto implements Controlador {
 	private boolean ligado;
 	private boolean tocando;
 	
-	//Constructor
+	//Constructor definindo os valores iniciais para o objeto a ser instanciado
 	public ControleRemoto() {
 		this.volume = 50;
 		this.ligado = false;
@@ -38,7 +38,7 @@ public class ControleRemoto implements Controlador {
 		return tocando;
 	}
 	
-	//Métodos subescritos da interface Controlador
+	//Métodos sobrescritos da interface Controlador
 	@Override
 	public void ligar() {
 		this.setLigado(true);
@@ -49,6 +49,7 @@ public class ControleRemoto implements Controlador {
 		this.setLigado(false);		
 	}
 
+	//Visualização do status atual dos atributos
 	@Override
 	public void abrirMenu() { 
 		System.out.println("-------MENU-------");
