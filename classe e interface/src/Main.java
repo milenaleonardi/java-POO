@@ -8,7 +8,11 @@ public class Main {
 		c.ligar();
 		c.maisVolume();
 		c.ligarMudo();
+		
+		//Visualização do status atual dos atributos do objeto 'c'
 		c.abrirMenu();
 		c.fecharMenu();
+		
+		System.out.prinln("Fim");
 	}
 }
